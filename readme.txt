@@ -8,6 +8,7 @@ Stable tag: trunk
 Easy way to creat and manage shortcode from Admin panel site.
 
 == Description ==
+Eng/Rus
 
 This plugin makes it easy to create any shortcode directly in the admin panel of the site and edit it at any time. 
 
@@ -41,9 +42,14 @@ It's very easy.
 Просто установите плагин, как все другие и… он уже работает!
 Все очень просто.
 
+== Screenshots ==
+
+1. To create a new shortcode, click the tab of the plugin "My shortcodes". / Чтобы создать новый шорткод - перейдите на страницу плагина и нажмите кнопку "Добавить шорткод"
+2. You should fill in the fields in the window that appears. / В появившемся окне заполните поля и нажмите "Добавить".
+
 == Frequently Asked Questions ==
 
-How to use?
+= How to use? =
 You create a new shortcode. Then you can paste it into any part of the article or website and it will show the given value (price, image, advertising, script).
 
 To create a new shortcode, click the tab of the plugin "My shortcodes".
@@ -53,10 +59,10 @@ You should fill in the fields in the window that appears
 
 Congratulations! You've created a shortcode that can be used on the website.
 
-Как использовать?
+= Как использовать? =
 Вы создаете новый шорткод. После этого можете вставить его в любую часть статьи или сайта, и он выведет значение, которое вы ему задали (цена, картинка, реклама, скрипт).
 
-Как создать новый шорткод?
+= Как создать новый шорткод? =
 Чтобы создать новый шорткод, перейдите на вкладку плагина «Мои шорткоды».
 Теперь вам нужно «Добавить новый шорткод»
 
