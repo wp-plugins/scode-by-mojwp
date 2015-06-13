@@ -2,7 +2,7 @@
 /**
 	Plugin Name: sCode by mojWP
 	Plugin URI: http://mojwp.ru/
-	Description: Easy way to creat and manage shortcode from Admin panel site.
+	Description: Easy way to creat and manage shortcode from Admin panel site. Создавайте и управляйте шорткодами прямо из админки сайта.
 	Author: mojWP
 	Version: 1.0
 	Author URI: http://mojwp.ru/
