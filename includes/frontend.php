@@ -5,8 +5,8 @@ if (!function_exists('add_action')) {
 	exit;
 }
 
-remove_filter( 'the_content', 'wpautop' );
-add_filter( 'the_content', 'wpautop' , 12);
+remove_filter('the_content', 'shortcode_unautop');
+remove_filter('the_excerpt', 'shortcode_unautop');
 
 $sc_shortcodes_array = array();
 

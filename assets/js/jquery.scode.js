@@ -13,13 +13,12 @@ jQuery(document).ready(function($) {
 			$('body').append('<div id="fade"></div>');
 		
 		$('#fade').css("opacity", 0.8).data('currentModal', id).fadeIn();
-		
-		var topMargin = (modal.height() + 200) / 2;
-		var leftMargin = (modal.width() + 10) / 2;
 
-		modal.fadeIn().css({
-			'margin-top' : -topMargin,
-			'margin-left' : -leftMargin
+		modal.fadeIn().position({
+			my: "center",
+			at: "center",
+			of: window,
+			collision : "flipfit"
 		});
 	}
 	
@@ -156,7 +155,14 @@ jQuery(document).ready(function($) {
 			} else {
 				progressContainer.addClass('hidden');
 				if (data.error) pResult.addClass('error').text(data.error); else pResult.addClass('error').text('Unknown error, please contact the plugin developers...');
-			} 
+			}
+			
+			$(modalID).position({
+				my: "center",
+				at: "center",
+				of: window,
+				collision : "flipfit"
+			});
 		}, 'json');
 		
 		return false;

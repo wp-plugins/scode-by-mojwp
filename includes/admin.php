@@ -10,7 +10,9 @@ function backend_enqueue_scripts_and_styles($hook_suffix) {
 	if ($hook_suffix == 'toplevel_page_scode' || $hook_suffix == 'scode_page_scode_support') {
 		wp_enqueue_style('scode_font_awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array(), false);
 		wp_enqueue_style('scode_backend_style', SCODE_PLUGIN_URL.'assets/css/admin-style.css', array(), false);
+		wp_enqueue_script('jquery-ui-position');
 		wp_enqueue_script('scode_backend_js', SCODE_PLUGIN_URL.'assets/js/jquery.scode.js', array('jquery'), false, true);
+		
 	}
 }
 
@@ -20,6 +22,8 @@ function register_scode_page() {
 	add_submenu_page('scode', __('My shortcodes', 'scode'), __('My shortcodes', 'scode'), 'manage_options', 'scode', 'scode_html');
 	add_submenu_page('scode', 'sCode — '.__('Instruction', 'scode'), __('Instruction', 'scode'), 'manage_options', 'scode_support', 'scode_support_html');
 }
+
+add_filter('wp_default_editor', create_function('', 'return "html";'));
 
 function scode_support_html() {
 	?>
@@ -160,7 +164,20 @@ function scode_html() {
 					</div>
 					<div class="form-group">
 						<label for="newShortcodeValue"><?php _e('Value', 'scode'); ?>:</label>
-						<textarea class="form-control" id="newShortcodeValue" name="value" rows="3" autocomplete="off"></textarea>
+						<?php 
+							$args = array(
+								'wpautop' => 0,
+								'media_buttons' => 1,
+								'textarea_name' => 'value',
+								'textarea_rows' => 10,
+								'teeny'         => 1,
+								'tinymce'       => 1,
+								'quicktags'     => array(
+													'id' => 'newShortcodeValue',
+													'buttons' => 'strong,em,link,img,ul,ol,li'
+													),
+							);
+							wp_editor( '', 'newShortcodeValue', $args ); ?>
 					</div>
 					<?php if (!empty($groups)) { ?>
 					<div class="form-row">
@@ -212,7 +229,20 @@ function scode_html() {
 						</div>
 						<div class="form-group">
 							<label for="editableShortcodeValue"><?php _e('Value', 'scode'); ?>:</label>
-							<textarea class="form-control" id="editableShortcodeValue" name="value" rows="3" autocomplete="off"></textarea>
+							<?php 
+							$args = array(
+								'wpautop' => 0,
+								'media_buttons' => 1,
+								'textarea_name' => 'value',
+								'textarea_rows' => 10,
+								'teeny'         => 1,
+								'tinymce'       => 1,
+								'quicktags'     => array(
+													'id' => 'editableShortcodeValue',
+													'buttons' => 'strong,em,link,img,ul,ol,li'
+													),
+							);
+							wp_editor( '', 'editableShortcodeValue', $args ); ?>
 						</div>
 						<div class="form-row">
 							<div class="form-group-6">

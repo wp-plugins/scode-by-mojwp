@@ -8,7 +8,7 @@ if (!function_exists('add_action')) {
 add_action('wp_ajax_scode_add_shortcode', 'scode_ajax_add_shortcode');
 function scode_ajax_add_shortcode() {
 	$nonce = $_POST['scode_new_nonce'];
-// scode_new_nonce
+
 	if (!wp_verify_nonce($nonce, 'addNewShortcode')) wp_die(json_encode(array('error' => __('Nonce verify fail...', 'scode'))));
 	if (!current_user_can('manage_options')) wp_die(json_encode(array('error' => __('No rights...', 'scode'))));
 	
