@@ -78,6 +78,9 @@ Congratulations! You've created a shortcode that can be used on the website.
 
 == Changelog ==
 
+= 1.1.1 =
+Update instruction
+
 = 1.1 =
 * Add Formatting toolbar
 * Bug fixes
