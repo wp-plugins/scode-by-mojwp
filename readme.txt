@@ -1,6 +1,6 @@
 === sCode by mojWP ===
 Contributors: mojwp, kaliyan
-Tags: AJAX, shortcode, shortcodes, tabs, Post, posts, image, seo, page, pages, widget, CSS, editor, shortlinks, filter
+Tags: AJAX, shortcode, shortcodes, tabs, Post, posts, image, seo, page, pages, widget, CSS, editor, shortlinks, filter, price, admin
 Requires at least: 4.2.2
 Tested up to: 4.2.2
 Stable tag: trunk
@@ -16,7 +16,10 @@ You can display any information on the frontend of the site: text, images (jpg, 
 
 What do you want your visitor to see? Depends on you.
 
-Thanks to sCode by mojWP plugin you can easily manage the advertising in each article and edit ad units on a page. You can change quickly the price of goods /services /works on a commercial site as well.
+You can use sCode on commercial and entertainment sites, as well as MFA.
+
+*On commercial sites, create shortcodes for prices of your services and prices. Further editing of the prices will be carried out on the same page, which will save you time.
+* On MFA, entertainment and information sites, you will be able to display the appropriate item from the CPA affiliate programs to increase conversion.
 
 You can create "Groups" to edit shortcodes on a definite basis.
 
@@ -28,7 +31,10 @@ You save your time!
 
 Только от вас зависит, что должен увидеть посетитель сайта.
 
-Благодаря плагину sCode by mojWP, вы с легкостью можете управлять рекламой в каждой статье и редактировать рекламные блоки на одной странице. А на коммерческих сайтах вы сможете быстро изменять цены на товар/услуги/работу.
+Вы можете использовать sCode на коммерческих и развлекательных сайтах, MFA.
+
+* На коммерческих сайтах создайте шорткоды для цен на ваши услуги и товары. Дальнейшее редактирование цен будет осуществляться с одной страницы, что сэкономит ваше время.
+* На сайтах MFA, развлекательных и информационных вы сможете выводить подходящий товар из CPA партнерских программ рядо с нужным абзацем, чтобы увеличить конверсию.
 
 Есть возможность создавать «Группы», чтобы редактировать шорткоды только по определенному признаку. 
 
