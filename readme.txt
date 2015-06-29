@@ -18,7 +18,7 @@ What do you want your visitor to see? Depends on you.
 
 You can use sCode on commercial and entertainment sites, as well as MFA.
 
-*On commercial sites, create shortcodes for prices of your services and prices. Further editing of the prices will be carried out on the same page, which will save you time.
+* On commercial sites, create shortcodes for prices of your services and prices. Further editing of the prices will be carried out on the same page, which will save you time.
 * On MFA, entertainment and information sites, you will be able to display the appropriate item from the CPA affiliate programs to increase conversion.
 
 You can create "Groups" to edit shortcodes on a definite basis.
