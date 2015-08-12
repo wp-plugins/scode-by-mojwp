@@ -4,7 +4,7 @@
 	Plugin URI: http://mojwp.ru/
 	Description: Easy way to creat and manage shortcode from Admin panel site. Создавайте и управляйте шорткодами прямо из админки сайта.
 	Author: mojWP
-	Version: 1.1.1
+	Version: 1.1.2
 	Author URI: http://mojwp.ru/
 	Text Domain: scode
 	Domain Path: /languages
@@ -16,7 +16,7 @@ if (!function_exists('add_action')) {
 	exit;
 }
 
-define('SCODE_VERSION', '1.1.1');
+define('SCODE_VERSION', '1.1.2');
 define('SCODE_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('SCODE_PLUGIN_URL', plugin_dir_url(__FILE__));
 
@@ -31,6 +31,7 @@ register_deactivation_hook(__FILE__, 'scode_deactivation');
 register_uninstall_hook(__FILE__, 'scode_uninstall');
 
 require_once(SCODE_PLUGIN_DIR . '/includes/functions.php');
+require_once(SCODE_PLUGIN_DIR . '/includes/global.php');
 if (is_admin()) {
 	require_once(SCODE_PLUGIN_DIR . '/includes/admin.php');
 	require_once(SCODE_PLUGIN_DIR . '/includes/ajax.php');

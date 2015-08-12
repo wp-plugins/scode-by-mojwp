@@ -1,8 +1,8 @@
 === sCode by mojWP ===
 Contributors: mojwp, kaliyan
 Tags: AJAX, shortcode, shortcodes, tabs, Post, posts, image, seo, page, pages, widget, CSS, editor, shortlinks, filter, price, admin
-Requires at least: 4.2.2
-Tested up to: 4.2.2
+Requires at least: 4.0
+Tested up to: 4.2.4
 Stable tag: trunk
 
 Easy way to creat and manage shortcode from Admin panel site.
@@ -77,6 +77,9 @@ Congratulations! You've created a shortcode that can be used on the website.
 Поздравляю! Вы создали шорткод, который уже можете использовать на сайте.
 
 == Changelog ==
+
+= 1.1.2 =
+Add link "My shordcodes" to Admin Bar
 
 = 1.1.1 =
 Update instruction

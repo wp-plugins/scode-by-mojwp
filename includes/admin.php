@@ -9,11 +9,12 @@ add_action('admin_enqueue_scripts',	'backend_enqueue_scripts_and_styles');
 function backend_enqueue_scripts_and_styles($hook_suffix) {
 	if ($hook_suffix == 'toplevel_page_scode' || $hook_suffix == 'scode_page_scode_support') {
 		wp_enqueue_style('scode_font_awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array(), false);
-		wp_enqueue_style('scode_backend_style', SCODE_PLUGIN_URL.'assets/css/admin-style.css', array(), false);
 		wp_enqueue_script('jquery-ui-position');
 		wp_enqueue_script('scode_backend_js', SCODE_PLUGIN_URL.'assets/js/jquery.scode.js', array('jquery'), false, true);
 		
 	}
+	
+	wp_enqueue_style('scode_backend_style', SCODE_PLUGIN_URL.'assets/css/admin-style.css', array(), false);
 }
 
 add_action('admin_menu', 'register_scode_page');
